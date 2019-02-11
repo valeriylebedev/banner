@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BannerTest.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BannerTest.Api.Controllers.BannersController.Get(System.String)">
+            <summary>
+            Returns an array of banners by query. At least one query parameter must be filled in.
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BannerTest.Api.Controllers.BannersController.GetById(System.Int32)">
+            <summary>
+            Gets a banner by id
+            </summary>
+            <param name="bannerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BannerTest.Api.Controllers.BannersController.Create(BannerTest.Api.Models.CreateBannerModel)">
+            <summary>
+            Creates a banner. Title must be unique.
+            </summary>
+            <param name="createBanner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BannerTest.Api.Controllers.BannersController.Update(System.Int32,BannerTest.Api.Models.UpdateBannerModel)">
+            <summary>
+            Updates a banner. Title, again, must be unique in case it has changed. 
+            </summary>
+            <param name="bannerId"></param>
+            <param name="updateBanner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BannerTest.Api.Controllers.BannersController.Delete(System.Int32)">
+            <summary>
+            Deletes a banner
+            </summary>
+            <param name="bannerId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
